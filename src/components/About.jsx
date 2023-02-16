@@ -1,36 +1,37 @@
 import * as React from 'react';
-import { Container, Grid, SimpleGrid, Skeleton, useMantineTheme, Image } from '@mantine/core';
+import { Space, Blockquote, Title, Image } from '@mantine/core';
 
-const PRIMARY_COL_HEIGHT = 300;
+import MyStory from './About';
+import SkillBadges from './Skills';
+import ToolsLanguages from './Tools';
+import CoreValues from './Values';
 
-const FullWidthGrid = () => {
 
-    const theme = useMantineTheme();
-    const SECONDARY_COL_HEIGHT = PRIMARY_COL_HEIGHT / 2 - theme.spacing.md / 2;
+const About = () => {
 
     return (
-        <Container my="md">
-            <SimpleGrid cols={2} spacing="md" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
-                <Skeleton height={PRIMARY_COL_HEIGHT} radius="md" animate={false} />
-                <Grid gutter="md">
-                    <Grid.Col>
-                        <Image
-                            radius="md"
-                            src="https://images.unsplash.com/photo-1511216335778-7cb8f49fa7a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=720&q=80"
-                            alt="Random unsplash image"
-                        />
-                        {/* <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} /> */}
-                    </Grid.Col>
-                    <Grid.Col span={6}>
-                        <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
-                    </Grid.Col>
-                    <Grid.Col span={6}>
-                        <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} />
-                    </Grid.Col>
-                </Grid>
-            </SimpleGrid>
-        </Container>
+        <>
+            <Title align='center'>Camilla Rees</Title>
+            <Space h="xl" />
+            <Blockquote>
+                Hi! I'm Camilla Rees, the new girl in tech. I'm a recent bootcamp grad that pivoted from the nonprofit management and marketing space to software development.
+            </Blockquote>
+
+            <Image
+                radius="md"
+                src='https://media.licdn.com/dms/image/D5603AQHNTq2UEOLZ5A/profile-displayphoto-shrink_800_800/0/1671139885545?e=1681344000&v=beta&t=SeVUCH_rAJ9gWeXImVo7ntjO8xMJj54t4c7jxfgD4q4'
+                alt="profile"
+            />
+
+            <MyStory />
+            <SkillBadges />
+            <ToolsLanguages />
+            <CoreValues />
+
+           
+
+        </>
     );
 }
 
-export default FullWidthGrid;
+export default About;
