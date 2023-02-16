@@ -5,7 +5,7 @@ import SkillBadges from './components/Skills';
 import ToolsLanguages from './components/Tools';
 import CoreValues from './components/Values';
 import Projects from './components/Projects';
-import { Container } from '@mantine/core';
+import { Container, Group, Grid, Space, Stack, Title } from '@mantine/core';
 
 import './App.css';
 
@@ -14,11 +14,28 @@ function App() {
   return (
     <Container>
       <About />
-      <MyStory />
-      <SkillBadges />
-      <ToolsLanguages />
+      <Space h="xl" />
+      <Title align='center'>My story</Title>
+            <Space h="xl" />
+      <Group position="center" grow>
       <CoreValues />
+      <MyStory />
+      </Group>
 
+      <Space h="xl" /> 
+      <Group position="center" grow>
+      <Stack>
+
+      <Title>Skills</Title>
+      <SkillBadges />
+      </Stack>
+      <Stack>
+      <Title>Tools & Languages</Title>
+      <ToolsLanguages />
+      </Stack>
+      </Group>
+
+      <Space h="xl" />
       <Projects />
     </Container>
   );

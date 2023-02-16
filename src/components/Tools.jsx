@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Title } from '@mantine/core';
+import { Title, Group, Space, Stack } from '@mantine/core';
 import { BrandReact, BrandReactNative, BrandJavascript, BrandMantine, BrandMysql, BrandMongodb, BrandSass, BrandFigma, BrandGithub, BrandHtml5, BrandVscode } from 'tabler-icons-react';
 
 const ToolsLanguages = () => {
@@ -7,7 +7,7 @@ const ToolsLanguages = () => {
     return (
 
         <>
-            <Title>Tools & Languages</Title>
+        <Group>
             <BrandJavascript
                 size={48}
                 strokeWidth={2}
@@ -63,6 +63,7 @@ const ToolsLanguages = () => {
                 strokeWidth={2}
                 color={'black'}
             />
+            </Group>
 
         </>
 

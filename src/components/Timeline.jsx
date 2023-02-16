@@ -5,8 +5,7 @@ const MyStory = () => {
 
     return (
         <>
- <Title align='center'>My story</Title>
-            <Space h="xl" />
+
 <Timeline color="indigo" active={4} bulletSize={24} lineWidth={2}>
 <Timeline.Item title="Full-stack JavaScript Development Certification">
     <Text color="dimmed" size="sm">Code Fellows</Text>
