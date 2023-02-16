@@ -8,7 +8,7 @@ const Projects = () => {
     const itemData = [
         {
             img: [
-                'https://github.com/chjkt-bug-tracker/bug-tracker-frontend/blob/dev/assets/login_Screen.jpg?raw=true',
+                'https://github.com/chjkt-bug-tracker/bug-tracker-frontend/raw/dev/assets/login_screen.png',
                 '../public/images/projects/vft/login.png',
             ],
             title: 'vft',
