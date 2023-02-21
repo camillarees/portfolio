@@ -1,17 +1,9 @@
 # Camilla Rees
 ## Front End Developer Portfolio
 
-## Available Scripts
+Hi, I'm Camilla Rees!
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I built this site to showcase my recent works and illustrate who I am as a developer and person.
 
 ### `npm test`
 
