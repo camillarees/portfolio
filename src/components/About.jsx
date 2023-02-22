@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Group, Space, Blockquote, Title, Image, createStyles } from '@mantine/core';
+import { motion } from "framer-motion"
 
 const useStyles = createStyles((theme) => ({
     body: {
@@ -9,6 +10,12 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const About = () => {
+
+    <motion.div
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+/>
 
     const { classes } = useStyles();
 

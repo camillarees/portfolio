@@ -1,54 +1,56 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import { Container, Title, Space } from '@mantine/core';
+import { Container, Title, Space, Image } from '@mantine/core';
 
-const Projects = () => {
-    const itemData = [
+
+const ProjectImage = () => {
+
+    const projectsData =
+    [
         {
-            img: [
-                'https://github.com/chjkt-bug-tracker/bug-tracker-frontend/raw/dev/assets/login_screen.png',
-                '../public/images/projects/vft/login.png',
+                img: [
+                    'https://github.com/chjkt-bug-tracker/bug-tracker-frontend/raw/dev/assets/login_screen.png',
+                    '../public/images/projects/vft/login.png',
             ],
-            title: 'vft',
+                title: 'vft',
         },
         {
-            img: [
-                'https://github.com/CHSMD/plant.space/blob/main/assets/img/plantSpace-UML.png?raw=true',
-                'https://images.unsplash.com/photo-1549388604-817d15aa0110',
+                img: [
+                    'https://github.com/CHSMD/plant.space/blob/main/assets/img/plantSpace-UML.png?raw=true',
+                    'https://images.unsplash.com/photo-1549388604-817d15aa0110',
             ],
-            title: 'plant.space',
+                title: 'plant.space',
         },
         {
-            img: [
-                'https://github.com/ACES-301/Documentation/blob/main/assets/demo1.png?raw=true',
-                'https://images.unsplash.com/photo-1549388604-817d15aa0110',
+                img: [
+                    'https://github.com/ACES-301/Documentation/blob/main/assets/demo1.png?raw=true',
+                    'https://images.unsplash.com/photo-1549388604-817d15aa0110',
             ],
-            title: 'mymixtape',
+                title: 'mymixtape',
         },
     ];
+
 
     return (
         <Container>
         <Title align="center">Projects</Title>
         <Space h="xl" />
         <Box sx={{ width: 800 }}>
-            <ImageList variant="masonry" cols={2} gap={10}>
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
-                        <img
-                            src={`${item.img[0]}?w=248&fit=crop&auto=format`}
-                            srcSet={`${item.img[0]}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                            alt={item.title}
-                            loading="lazy"
-                        />
-                    </ImageListItem>
-                ))}
-            </ImageList>
+        {projectsData.map((item) => (
+            <Image
+             key={item.img}
+             src={`${item.img[0]}?w=248&fit=crop&auto=format`}
+             srcSet={`${item.img[0]}?w=248&fit=crop&auto=format&dpr=2 2x`}
+             alt={item.title}
+             loading="lazy"
+             >
+               
+               
+            </Image>
+             ))}
         </Box>
         </Container>
     );
 }
 
-export default Projects;
+export default ProjectImage;
