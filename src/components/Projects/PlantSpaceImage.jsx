@@ -10,8 +10,8 @@ const PlantSpaceImage = () => {
         <Space h="xl" />
         <Box sx={{ width: 800 }}>
                  <Image
-             src={`https://github.com/CHSMD/plant.space/blob/main/assets/img/plantSpace-UML.png?raw=true?w=248&fit=crop&auto=format`}
-             srcSet={`https://github.com/CHSMD/plant.space/blob/main/assets/img/plantSpace-UML.png?raw=true?w=248&fit=crop&auto=format&dpr=2 2x`}
+             src={`https://github.com/CHSMD/plant.space/raw/main/assets/img/plantspace.jpg?raw=true?w=248&fit=crop&auto=format`}
+             srcSet={`https://github.com/CHSMD/plant.space/raw/main/assets/img/plantspace.jpg?raw=true?w=248&fit=crop&auto=format&dpr=2 2x`}
              alt='plant.space'
              loading="lazy"
              >
