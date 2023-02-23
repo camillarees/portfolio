@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Title, Space, Timeline, Text } from '@mantine/core';
+import { Timeline, Text } from '@mantine/core';
 
 const MyStory = () => {
 

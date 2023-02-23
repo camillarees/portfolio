@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import { Container, Title, Space, Image } from '@mantine/core';
+import { Container, Space, Image } from '@mantine/core';
 
 
 const VftImage = () => {

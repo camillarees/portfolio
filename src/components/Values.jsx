@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BackgroundImage, Center, Box, Space, Stack, Title, Text, List, ThemeIcon } from '@mantine/core';
+import { BackgroundImage, Center, Space, Stack, Title, Text, List, ThemeIcon } from '@mantine/core';
 import { Plant, HeartHandshake, UserCheck } from 'tabler-icons-react';
 
 const CoreValues = () => {
