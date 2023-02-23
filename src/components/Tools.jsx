@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Title, Group, Space, Stack } from '@mantine/core';
+import { Group } from '@mantine/core';
 import { BrandReact, BrandReactNative, BrandJavascript, BrandMantine, BrandMysql, BrandMongodb, BrandSass, BrandFigma, BrandGithub, BrandHtml5, BrandVscode } from 'tabler-icons-react';
 
 const ToolsLanguages = () => {

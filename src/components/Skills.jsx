@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Title, Badge, Group, Stack } from '@mantine/core';
+import { Badge, Group } from '@mantine/core';
 
 const SkillBadges = () => {
 

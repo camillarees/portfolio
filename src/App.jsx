@@ -7,7 +7,7 @@ import CoreValues from './components/Values';
 import VftModal from './components/Modal/VftModal';
 import MixtapeModal from './components/Modal/MixtapeModal';
 import PlantSpaceModal from './components/Modal/PlantSpaceModal';
-import { Container, Group, Grid, Space, Stack, Title } from '@mantine/core';
+import { Container, Group, Space, Stack, Title } from '@mantine/core';
 
 import './App.css';
 
