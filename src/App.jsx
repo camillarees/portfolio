@@ -4,7 +4,9 @@ import MyStory from './components/Timeline';
 import SkillBadges from './components/Skills';
 import ToolsLanguages from './components/Tools';
 import CoreValues from './components/Values';
-import Modal from './components/Modal/index';
+import VftModal from './components/Modal/VftModal';
+import MixtapeModal from './components/Modal/MixtapeModal';
+import PlantSpaceModal from './components/Modal/PlantSpaceModal';
 import { Container, Group, Grid, Space, Stack, Title } from '@mantine/core';
 
 import './App.css';
@@ -36,7 +38,11 @@ function App() {
       </Group>
 
       <Space h="xl" />
-      <Modal />
+      <Title align="center">Projects</Title>
+      <VftModal />
+      <MixtapeModal />
+      <PlantSpaceModal />
+
     </Container>
   );
 }

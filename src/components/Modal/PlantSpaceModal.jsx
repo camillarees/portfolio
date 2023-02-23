@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Modal, Group } from '@mantine/core';
-import ProjectImage from '../Projects';
-import ProjectCarousel from '../Carousel/index';
+import PlantSpaceCarousel from '../Carousel/index';
+import PlantSpaceImage from '../Projects/PlantSpaceImage';
 
-function ProjectModal() {
+function PlantSpaceModal() {
 
 
   const [opened, setOpened] = useState(false);
@@ -15,15 +15,15 @@ function ProjectModal() {
         opened={opened}
         onClose={() => setOpened(false)}
       >
-       <ProjectCarousel />
+       <PlantSpaceCarousel />
       </Modal>
     <div onClick={() => setOpened(true)} >
       <Group position="center">
-      <ProjectImage />
+      <PlantSpaceImage />
       </Group>
       </div>
     </>
   );
 }
 
-export default ProjectModal;
+export default PlantSpaceModal;
