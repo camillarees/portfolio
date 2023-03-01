@@ -9,6 +9,7 @@ import VftModal from './components/Modal/VftModal';
 import MixtapeModal from './components/Modal/MixtapeModal';
 import PlantSpaceModal from './components/Modal/PlantSpaceModal';
 import { Center, Container, Group, Space, Stack, Title, Divider } from '@mantine/core';
+import { motion } from 'framer-motion';
 
 import './App.css';
 
@@ -48,11 +49,44 @@ function App() {
       <Divider my="sm" />
       <Title align="center">Projects</Title>
       <Space h="xl" />
-      <VftModal />
+      <motion.div
+        transition={{
+          duration: .5,
+          delay: 0.3,
+          ease: [0.2, 0.2, 0.2, 0.2],
+        }}
+        initial={{ opacity: 0, y: 23 }}
+        whileInView={{ opacity: 1, y: 5 }}
+        viewport={{ once: true }}
+      >
+        <VftModal />
+      </motion.div>
       <Space h="xl" />
-      <MixtapeModal />
+      <motion.div
+        transition={{
+          duration: .5,
+          delay: 0.3,
+          ease: [0.2, 0.2, 0.2, 0.2],
+        }}
+        initial={{ opacity: 0, y: 23 }}
+        whileInView={{ opacity: 1, y: 5 }}
+        viewport={{ once: true }}
+      >
+        <MixtapeModal />
+      </motion.div>
       <Space h="xl" />
-      <PlantSpaceModal />
+      <motion.div
+        transition={{
+          duration: .5,
+          delay: 0.3,
+          ease: [0.2, 0.2, 0.2, 0.2],
+        }}
+        initial={{ opacity: 0, y: 23 }}
+        whileInView={{ opacity: 1, y: 5 }}
+        viewport={{ once: true }}
+      >
+        <PlantSpaceModal />
+      </motion.div>
 
     </Container>
   );

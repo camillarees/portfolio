@@ -5,27 +5,28 @@ import { motion } from 'framer-motion';
 const Profile = () => {
     return (
         <>
-        <Space h="xl" />
-        <motion.div 
-        align='center'
-        animate={{ opacity: 1, y: 5 }}
-        transition={{
-            duration: .5,
-            delay: 1,
-            ease: [0.2, 0.2, 0.2, 0.2],
-        }}
-        initial={{ opacity: 0, y: 23 }}
-        >
-        <Image
-radius="md"
-width='80%'
-src='https://media.licdn.com/dms/image/D5603AQHNTq2UEOLZ5A/profile-displayphoto-shrink_800_800/0/1671139885545?e=1681344000&v=beta&t=SeVUCH_rAJ9gWeXImVo7ntjO8xMJj54t4c7jxfgD4q4'
-alt="profile"
-fit='contain'
-align='center'
-/>
-</motion.div>
-</>
+            <Space h="xl" />
+            <motion.div
+                align='center'
+                transition={{
+                    duration: .5,
+                    delay: 1,
+                    ease: [0.2, 0.2, 0.2, 0.2],
+                }}
+                initial={{ opacity: 0, y: 23 }}
+                whileInView={{ opacity: 1, y: 5 }}
+                viewport={{ once: true }}
+            >
+                <Image
+                    radius="md"
+                    width='80%'
+                    src='https://media.licdn.com/dms/image/D5603AQHNTq2UEOLZ5A/profile-displayphoto-shrink_800_800/0/1671139885545?e=1681344000&v=beta&t=SeVUCH_rAJ9gWeXImVo7ntjO8xMJj54t4c7jxfgD4q4'
+                    alt="profile"
+                    fit='contain'
+                    align='center'
+                />
+            </motion.div>
+        </>
 
     )
 }

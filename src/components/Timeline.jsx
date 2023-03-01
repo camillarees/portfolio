@@ -1,11 +1,21 @@
 import * as React from 'react';
 import { Timeline, Text } from '@mantine/core';
+import { motion } from 'framer-motion';
 
 const MyStory = () => {
 
     return (
         <>
-
+         <motion.div 
+        transition={{
+            duration: .5,
+            delay: .3,
+            ease: [0.2, 0.2, 0.2, 0.2],
+        }}
+        initial={{ opacity: 0, y: 23 }}
+        whileInView={{ opacity: 1, y: 5 }}
+        viewport={{ once: true }}
+        >
 <Timeline color="indigo" active={4} bulletSize={24} lineWidth={2}>
 <Timeline.Item title="Full-stack JavaScript Development Certification">
     <Text color="dimmed" size="sm">Code Fellows</Text>
@@ -31,6 +41,7 @@ const MyStory = () => {
     <Text size="xs" mt={4}>2015-2021</Text>
 </Timeline.Item>
 </Timeline>
+</motion.div>
 </>
     );
 }
