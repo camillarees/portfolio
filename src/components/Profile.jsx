@@ -1,9 +1,21 @@
 import * as React from 'react';
-import { Image } from '@mantine/core';
+import { Image, Space } from '@mantine/core';
+import { motion } from 'framer-motion';
 
 const Profile = () => {
     return (
-      
+        <>
+        <Space h="xl" />
+        <motion.div 
+        align='center'
+        animate={{ opacity: 1, y: 5 }}
+        transition={{
+            duration: .5,
+            delay: 1,
+            ease: [0.2, 0.2, 0.2, 0.2],
+        }}
+        initial={{ opacity: 0, y: 23 }}
+        >
         <Image
 radius="md"
 width='80%'
@@ -12,6 +24,8 @@ alt="profile"
 fit='contain'
 align='center'
 />
+</motion.div>
+</>
 
     )
 }
