@@ -10,9 +10,8 @@ const VftVideo = () => {
      height="315" 
      src='https://www.youtube.com/embed/OV23NNmTaMM'
      title='vft'
-     frameborder="0" 
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-     allowfullscreen>
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+     allowFullScreen>
      </iframe>
     </AspectRatio>
      </>
