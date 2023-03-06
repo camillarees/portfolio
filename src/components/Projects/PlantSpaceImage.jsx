@@ -1,8 +1,10 @@
 import * as React from 'react';
+import { useHover } from '@mantine/hooks';
 import { Image } from '@mantine/core';
 
 
 const PlantSpaceImage = () => {
+    const { hovered, ref } = useHover();
 
     return (
        
@@ -12,6 +14,9 @@ const PlantSpaceImage = () => {
              alt='plant.space'
              loading="lazy"
              fit='contain'
+             ref={ref}
+             style={{ cursor: hovered ? 'pointer' : 'none' }}
+             
              >
 
              </Image>

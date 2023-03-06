@@ -19,7 +19,8 @@ function MixtapeModal() {
       </Modal>
     <div onClick={() => setOpened(true)} >
       <Group position="center">
-      <MixtapeImage />
+      <MixtapeImage 
+      />
       </Group>
       </div>
     </>
