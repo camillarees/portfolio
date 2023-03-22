@@ -16,7 +16,11 @@ const MyStory = () => {
         whileInView={{ opacity: 1, y: 5 }}
         viewport={{ once: true }}
         >
-<Timeline color="indigo" active={4} bulletSize={24} lineWidth={2}>
+<Timeline color="indigo" active={5} bulletSize={24} lineWidth={2}>
+<Timeline.Item title="Coding Instructor">
+    <Text color="dimmed" size="sm">CodeFu</Text>
+    <Text size="xs" mt={4}>March 2023</Text>
+</Timeline.Item>
 <Timeline.Item title="Full-stack JavaScript Development Certification">
     <Text color="dimmed" size="sm">Code Fellows</Text>
     <Text size="xs" mt={4}>February 3rd, 2023</Text>
