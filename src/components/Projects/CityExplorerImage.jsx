@@ -9,9 +9,9 @@ const MixtapeImage = () => {
     return (
         <>
             <Image
-                src={`https://github.com/ACES-301/Documentation/blob/main/assets/demo1.png?raw=true?raw=true?w=248&fit=crop&auto=format`}
-                srcSet={`https://github.com/ACES-301/Documentation/blob/main/assets/demo1.png?raw=true?w=248&fit=crop&auto=format&dpr=2 2x`}
-                alt='my mixtape'
+                src={`https://github.com/camillarees/city-explorer/blob/main/public/images/city-explorer-demo-image.png?raw=true?raw=true?raw=true?w=248&fit=crop&auto=format`}
+                srcSet={`https://github.com/camillarees/city-explorer/blob/main/public/images/city-explorer-demo-image.png?raw=true?raw=true?w=248&fit=crop&auto=format&dpr=2 2x`}
+                alt='city explorer'
                 loading="lazy"
                 fit='contain'
                 ref={ref}
