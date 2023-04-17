@@ -46,11 +46,12 @@ const slides = images.map((url) => (
 return (
     <Carousel
         classNames={classes}
-        sx={{ maxWidth: '100%' }}
-        mx="auto"
+        slideSize="70%"
+        height='70%'
+        align="start"
+        orientation="vertical"
+        slideGap='lg'
         withIndicators
-        height={400}
-        slideGap='md'
         styles={{
             indicator: {
                 width: 12,
