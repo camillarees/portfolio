@@ -40,11 +40,10 @@ const About = () => {
 
             >
                 <Blockquote classNames={classes.body}>
-                    Hi! I'm Camilla Rees, the new girl in tech. I'm a collaborative, people-centered front-end developer and career pivoter from the nonprofit, higher education, marketing, and content development fields.
+                    Hi! I'm Camilla Rees. I'm a collaborative, people-centered software engineer and career pivoter from the nonprofit, higher education, marketing, and content development fields.
                     <Space h="xl" />
-                    My dynamic experience and skillset help me create aesthetic, usable full-stack applications that benefit others' lives and educate and engage communities.
-                    <Space h="xl" />
-                    Throughout my career, I've witnessed an immense positive impact on societal ecosystems when we improve the ways we connect good people with the right resources and opportunities. Making life better for others is one of my guiding principles and I'm always seeking opportunities to serve in the tech space!
+                    My dynamic skillset helps me create functional art with code that makes a difference in the world.
+                    Making life better for others is one of my guiding principles and I'm always seeking opportunities to serve in the tech space!
                 </Blockquote>
             </motion.div>
         </>
